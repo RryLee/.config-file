@@ -24,3 +24,18 @@ alias mk="mkdir"
 alias require="composer require"
 alias artisan="php artisan"
 alias exercism="~/bin/exercism"
+alias pt="py.test"
+alias +="amixer -q sset Master 5%+ unmute"
+alias -="amixer -q sset Master 5%- unmute"
+alias gc="git clone"
+alias vu="vagrant up"
+alias vs="vagrant ssh"
+alias atom="atom-beta"
+alias apm="apm-beta"
+alias nis="npm install --save"
+alias nid="npm install --save-dev"
+
+if status --is-interactive
+    set PATH $PATH ~/.config/composer/vendor/bin;
+end
+
