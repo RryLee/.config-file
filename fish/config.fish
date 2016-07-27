@@ -10,7 +10,7 @@ source $OMF_PATH/init.fish
 alias cls="clear"
 alias phpser="php -S localhost:8000/"
 alias gi="git init"
-alias gp="git push"
+alias gps="git push"
 alias ga="git add ."
 alias gs="git status"
 alias gl="git log"
@@ -23,6 +23,7 @@ alias install="sudo apt-get install"
 alias mk="mkdir"
 alias require="composer require"
 alias artisan="php artisan"
+alias migrate="php artisan migrate"
 alias exercism="~/bin/exercism"
 alias pt="py.test"
 alias +="amixer -q sset Master 5%+ unmute"
@@ -34,8 +35,9 @@ alias atom="atom-beta"
 alias apm="apm-beta"
 alias nis="npm install --save"
 alias nid="npm install --save-dev"
+alias gpl="git pull"
+alias sd="sudo"
 
 if status --is-interactive
     set PATH $PATH ~/.config/composer/vendor/bin;
 end
-
